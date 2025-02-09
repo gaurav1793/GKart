@@ -4,6 +4,8 @@ GKart is an e-commerce platform that allows users to browse and purchase a wide 
 
 ![GKart Logo](images/logo.png)
 
+
+## screenshot of website are present in img folder
 ## Features
 
 - User authentication and authorization
