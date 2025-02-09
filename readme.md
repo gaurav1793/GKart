@@ -37,7 +37,7 @@ GKart is an e-commerce platform that allows users to browse and purchase a wide 
 ## Screenshots
 
 ### Home Page
-![Home Page](img/Screenshot(39).png)
+![Home Page](./img/Screenshot(39).png)
 
 ### Product Page
 ![Product Page](images/productpage.png)
