@@ -64,17 +64,17 @@ const TotalView = ({ cartItems }) => {
 
     const totalAmount = () => {
         let price = 0, discount = 0;
-        cartItems.map(item => {
-            price += item.price.mrp ;
-            discount += (item.price.mrp - item.price.cost)
-        })
+        cartItems.forEach(item => {
+            price += item.price.mrp;
+            discount += (item.price.mrp - item.price.cost);
+        });
         setPrice(price);
         setDiscount(discount);
     }
 
     const makePayments = async()=>{
         const stripe = await loadStripe("pk_test_51PI6L2SE5SV2hd6IB09yvMv4phnG4310JRGJDlZmwk3ATTh40eOaSsLqwxNyQfxuPHVkrHBwseN6vO6CBI9UEaxF005SlN1O7a");
-
+        
         const body = {
             products:{ cartItems }
         }
